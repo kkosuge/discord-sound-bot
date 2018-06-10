@@ -6,14 +6,15 @@ const mp3Duration = require('mp3-duration')
 const token = config.get('token')
 
 const mp3 = './sounds/bgm.mp3'
-const channelName = 'スタジオ'
+const voiceChannelName = config.get('voiceChannelName')
+
 let voiceChannel
 let currentDispatcher
 
 client.on('ready', () => {
-  voiceChannel = client.channels.find('name', channelName)
+  voiceChannel = client.channels.find('name', voiceChannelName)
   if (!voiceChannel || voiceChannel.type !== 'voice') {
-    console.log(`${channelName} というボイスチャンネルがみつかりません.`)
+    console.log(`${voiceChannelName} というボイスチャンネルがみつかりません.`)
   }
 })
 
