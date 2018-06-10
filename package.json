@@ -1,0 +1,17 @@
+{
+  "name": "discord-bgm-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kkosuge",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^1.30.0",
+    "discord.js": "^11.3.2",
+    "mp3-duration": "^1.1.0",
+    "node-opus": "^0.3.0"
+  }
+}
